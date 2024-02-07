@@ -1,0 +1,20 @@
+id: 940924e1-8ccb-46fe-bca6-81d2d7745be6
+name: spring-ai-chat
+timestamp: 2024-02-07T17:29:08.219618Z
+source: VSCODE
+username: cwalls
+options:
+  projectName: spring-ai-chat
+  artifactId: spring-ai-chat
+  groupId: com.example
+  packageName: com.example.aichat
+  aiService: openAI
+  openaiApiKey: "${OPENAI_API_KEY}"
+  azureaiApiKey: "${AZURE_AI_API_KEY}"
+  openaiModel: gpt-3.5-turbo-1106
+  vectorStoreType: pgvector
+  pgJdbcUrl: jdbc:postgresql://localhost:5432/vector_store
+  pgUsername: postgres
+  pgPassword: postgres
+  liveUpdateIDESupport: true
+  includeBuildToolWrapper: true

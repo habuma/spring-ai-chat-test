@@ -1,6 +1,6 @@
-id: 940924e1-8ccb-46fe-bca6-81d2d7745be6
+id: c194974e-ebee-4bf0-b17b-12e6a55e476c
 name: spring-ai-chat
-timestamp: 2024-02-07T17:29:08.219618Z
+timestamp: 2024-02-13T18:52:19.102051Z
 source: VSCODE
 username: cwalls
 options:
@@ -11,7 +11,7 @@ options:
   aiService: openAI
   openaiApiKey: "${OPENAI_API_KEY}"
   azureaiApiKey: "${AZURE_AI_API_KEY}"
-  openaiModel: gpt-3.5-turbo-1106
+  openaiModel: gpt-3.5-turbo
   vectorStoreType: pgvector
   pgJdbcUrl: jdbc:postgresql://localhost:5432/vector_store
   pgUsername: postgres

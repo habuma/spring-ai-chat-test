@@ -11,7 +11,7 @@
   "openaiApiKey" : "${OPENAI_API_KEY}",
   "azureaiApiKey" : "${AZURE_AI_API_KEY}",
   "azureAIEndpoint" : "",
-  "openaiModel" : "gpt-3.5-turbo-1106",
+  "openaiModel" : "gpt-3.5-turbo",
   "vectorStoreType" : "pgvector",
   "pgJdbcUrl" : "jdbc:postgresql://localhost:5432/vector_store",
   "pgUsername" : "postgres",
@@ -77,7 +77,6 @@
 ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.txt didn't match [**/SimpleVectorStoreConfig.java] -> included
 ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/TEST-com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.xml didn't match [**/SimpleVectorStoreConfig.java] -> included
 ┃ ┃ ┃ ┃ ┃ Debug pom.xml didn't match [**/SimpleVectorStoreConfig.java] -> included
-┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [**/SimpleVectorStoreConfig.java] -> included
 ┃ ┃ ┃ ┃ ┃ Debug .gitignore didn't match [**/SimpleVectorStoreConfig.java] -> included
 ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.properties didn't match [**/SimpleVectorStoreConfig.java] -> included
 ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.jar didn't match [**/SimpleVectorStoreConfig.java] -> included
@@ -119,7 +118,7 @@
 ┃ ┃ ┃ ┃ ┃ engine.transformations[0].validated.delegate.in.transformations[1].delegate (Chain)
 ┃ ┃ ┃ ┃ ┃  Info Running Chain(Merge, UniquePath)
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0] (Merge)
-┃ ┃ ┃ ┃ ┃ ┃  Info Running Merge(Combo, Combo, Combo, Combo, Combo)
+┃ ┃ ┃ ┃ ┃ ┃  Info Running Merge(Combo, Combo, Combo, Combo, Combo, Combo)
 ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[0] (Combo)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Combo running as Chain
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[0].delegate (Chain)
@@ -166,7 +165,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.txt matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/TEST-com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.xml matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug pom.xml matched [**] -> included
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .gitignore matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.properties matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.jar matched [**] -> included
@@ -244,7 +242,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.txt didn't match [pom.xml, README.md] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/TEST-com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.xml didn't match [pom.xml, README.md] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug pom.xml matched [pom.xml, README.md] -> excluded
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [pom.xml, README.md] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .gitignore didn't match [pom.xml, README.md] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.properties didn't match [pom.xml, README.md] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.jar didn't match [pom.xml, README.md] -> included
@@ -283,7 +280,7 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[1] (Combo)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Combo running as Chain
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[1].delegate (Chain)
-┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Running Chain(Include, ReplaceText, ReplaceText, ReplaceText, ReplaceText)
+┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Running Chain(Include, ReplaceText, ReplaceText, ReplaceText, ReplaceText, ReplaceText, ReplaceText)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[1].delegate.transformations[0] (Include)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Will include [pom.xml]
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug docker-compose.yaml didn't match [pom.xml] -> excluded
@@ -326,7 +323,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.txt didn't match [pom.xml] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/TEST-com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.xml didn't match [pom.xml] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug pom.xml matched [pom.xml] -> included
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [pom.xml] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .gitignore didn't match [pom.xml] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.properties didn't match [pom.xml] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.jar didn't match [pom.xml] -> excluded
@@ -370,6 +366,12 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Condition (#vectorStoreType != 'pgvector') evaluated to false
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ null ()
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[1].delegate.transformations[4] (ReplaceText)
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Condition (#vectorStoreType != 'pgvector') evaluated to false
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ null ()
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[1].delegate.transformations[5] (ReplaceText)
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Condition (#vectorStoreType != 'pgvector') evaluated to false
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ null ()
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[1].delegate.transformations[6] (ReplaceText)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Condition (#aiService == 'azureOpenAI') evaluated to false
 ┃ ┃ ┃ ┃ ┃ ┃ ┗ ┗ null ()
 ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[2] (Combo)
@@ -418,7 +420,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.txt didn't match [README.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/TEST-com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.xml didn't match [README.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug pom.xml didn't match [README.md] -> excluded
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [README.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .gitignore didn't match [README.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.properties didn't match [README.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.jar didn't match [README.md] -> excluded
@@ -505,7 +506,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.txt didn't match [**/application.properties] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/surefire-reports/TEST-com.vmware.tap.accelerators.aichat.ChatServiceApplicationTests.xml didn't match [**/application.properties] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug pom.xml didn't match [**/application.properties] -> excluded
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [**/application.properties] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .gitignore didn't match [**/application.properties] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.properties didn't match [**/application.properties] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .mvn/wrapper/maven-wrapper.jar didn't match [**/application.properties] -> excluded
@@ -542,9 +542,12 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/vmware/tap/accelerators/aichat/ChatController.java didn't match [**/application.properties] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ Debug src/main/java/com/vmware/tap/accelerators/aichat/ChatServiceApplication.java didn't match [**/application.properties] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[3].delegate.transformations[1] (ReplaceText)
-┃ ┃ ┃ ┃ ┃ ┃ ┗ ┗  Info Will replace [spring.ai.openai.api-key=${OPENAI_API_KEY}->spring.ai.openai.api...(truncated), spring.ai.openai.model=gpt-3.5-turbo-1106->spring.ai.openai.mod...(truncated)]
+┃ ┃ ┃ ┃ ┃ ┃ ┗ ┗  Info Will replace [spring.ai.openai.model=gpt-3.5-turbo->spring.ai.openai.mod...(truncated), spring.ai.openai.api-key=${OPENAI_API_KEY}->spring.ai.openai.api...(truncated)]
 ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[4] (Combo)
 ┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Condition (#aiService == 'azureOpenAI') evaluated to false
+┃ ┃ ┃ ┃ ┃ ┃ ┗ null ()
+┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[0].sources[5] (Combo)
+┃ ┃ ┃ ┃ ┃ ┃ ┃  Info Condition (#vectorStoreType != 'pgvector') evaluated to false
 ┃ ┃ ┃ ┃ ┃ ┗ ┗ null ()
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].validated.delegate.in.transformations[1].delegate.transformations[1] (UniquePath)
 ┃ ┃ ┃ ┃ ┃ ┃ Debug Multiple representations for path 'src/main/resources/application.properties', will use the one appearing last 
@@ -590,7 +593,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst didn't match [Tiltfile] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .idea/jarRepositories.xml didn't match [Tiltfile] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/resources/templates/home.html didn't match [Tiltfile] -> excluded
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [Tiltfile] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/UploadController.class didn't match [Tiltfile] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/ChatController.class didn't match [Tiltfile] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/vmware/tap/accelerators/aichat/ChatServiceApplication.java didn't match [Tiltfile] -> excluded
@@ -678,7 +680,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst didn't match [DEPLOYING.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .idea/jarRepositories.xml didn't match [DEPLOYING.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/resources/templates/home.html didn't match [DEPLOYING.md] -> excluded
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [DEPLOYING.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/UploadController.class didn't match [DEPLOYING.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/ChatController.class didn't match [DEPLOYING.md] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/vmware/tap/accelerators/aichat/ChatServiceApplication.java didn't match [DEPLOYING.md] -> excluded
@@ -764,7 +765,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .idea/jarRepositories.xml matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/resources/templates/home.html matched [**] -> included
-┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/UploadController.class matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/ChatController.class matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/vmware/tap/accelerators/aichat/ChatServiceApplication.java matched [**] -> included
@@ -851,7 +851,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/org/springframework/ai/operator/AiOperator.class didn't match [**/*.java] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst didn't match [**/*.java] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .idea/jarRepositories.xml didn't match [**/*.java] -> included
-┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [**/*.java] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/resources/templates/home.html didn't match [**/*.java] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/ChatController.class didn't match [**/*.java] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/UploadController.class didn't match [**/*.java] -> included
@@ -937,7 +936,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/org/springframework/ai/operator/AiOperator.class didn't match [**/*.java] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst didn't match [**/*.java] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug .idea/jarRepositories.xml didn't match [**/*.java] -> excluded
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [**/*.java] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/resources/templates/home.html didn't match [**/*.java] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/ChatController.class didn't match [**/*.java] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/UploadController.class didn't match [**/*.java] -> excluded
@@ -1045,7 +1043,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/example/aichat/AIConfig.java matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/test/java/com/example/aichat/ChatServiceApplicationTests.java matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/resources/templates/home.html matched [**] -> included
-┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/example/aichat/ChatController.java matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/UploadController.class matched [**] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/ChatController.class matched [**] -> included
@@ -1135,7 +1132,6 @@
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/example/aichat/AIConfig.java didn't match [mvnw, mvnw.cmd, .mvn/**] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/test/java/com/example/aichat/ChatServiceApplicationTests.java didn't match [mvnw, mvnw.cmd, .mvn/**] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/resources/templates/home.html didn't match [mvnw, mvnw.cmd, .mvn/**] -> excluded
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug workload.yaml didn't match [mvnw, mvnw.cmd, .mvn/**] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/com/example/aichat/ChatController.java didn't match [mvnw, mvnw.cmd, .mvn/**] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/UploadController.class didn't match [mvnw, mvnw.cmd, .mvn/**] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ Debug target/classes/com/vmware/tap/accelerators/aichat/ChatController.class didn't match [mvnw, mvnw.cmd, .mvn/**] -> excluded
